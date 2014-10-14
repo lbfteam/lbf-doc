@@ -2,7 +2,9 @@
 LBF全称Lazy Bullet Framework，致力于企业级前端解决方案
 
 ## Release
-[0.8.0](./versions/0.8.0)
+Edge Verision: [0.8.0](./versions/0.8.0)
+Stable Version: 0.7.6
+History Versions(待完善)
 
 ## Quick Start
 ```
@@ -15,3 +17,27 @@ LBF.use('lib.jQuery', function($){
 })
 </script>
 ```
+
+## Usage
+
+### API Doc
+待完善
+
+### Samples
+待完善
+
+### FAQ
+待完善
+
+### 高级特性
+- 自定义主题包
+- 引入外部文件
+
+## Features in future
+- LESS编写主题包
+- API Doc/Sample完善
+- 代码本地存储
+- 代码增量更新
+- 移动端支持
+- ICheckbox/IRadio优化重构
+- AutoComplete优化
