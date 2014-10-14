@@ -4,19 +4,18 @@
 # Change Logs
 ## 引入grunt管理LBF开发工具、任务
 
-build构建核心文件LBF.js
+- build构建核心文件LBF.js
 ```shell
 make build
 ```
 
-release生成待发布版本
-版本号以package.json中的version为准。
-生成目录为release/@version/
+- release生成待发布版本
+版本号以package.json中的version为准。生成目录为release/@version/
 ```shell
 make release
 ```
 
-test运行单元测试用例
+- test运行单元测试用例
 采用mocha+chai构建单元测试用例
 ```shell
 make test
@@ -25,7 +24,9 @@ make test
 ## 破坏性改造
 ### LBF.config替换~~LBF.set~~，配置参数大量调整
 LBF重构了核心代码，在seajs的源码基础上进行改造和整合。
+
 因此LBF的配置接口由config改为set，配置参数也做了相应调整。
+
 详情请查看[LBF配置](./versions/0.8.0/config.md)
 ```javascript
 LBF.config({
@@ -66,7 +67,9 @@ LBF.config({
 
 ### LBF.use & require.async
 LBF从0.8.0版本起将严格遵循[CMD规范](https://github.com/seajs/seajs/issues/242)。
+
 因此LBF.use和require.async的回调函数参数将做出调整,从[~~require~~, mod1, mod2, ...]改为[mod1, mod2, ...]。
+
 [jsfiddle代码示例](http://jsfiddle.net/mice530/e8v8zx0p/6/)
 ```javascript
 LBF.use(['lib.jQuery', 'util.template', 'util.dateTool'], function($, artTemplate, dateTool){
