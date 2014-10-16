@@ -2,7 +2,7 @@
 LBF全称Lazy Bullet Framework，致力于企业级前端解决方案
 
 ## Release
-Edge Verision: [0.8.0](./versions/0.8.0)
+Edge Verision: [0.8.0](./archive/0.8.0)
 
 Stable Version: 0.7.6
 
