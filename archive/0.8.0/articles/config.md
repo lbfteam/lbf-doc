@@ -1,4 +1,7 @@
-et** 方法来进行LBF的一些全局变量的设置。0.8.0版本之后LBF采用了 **config** 的方法来进行设置。下面就 **config** 的使用进行详细说明。
+如何使用LBF中的config方法
+==============
+
+0.8.0之前的LBF版本使用 **set** 方法来进行LBF的一些全局变量的设置。0.8.0版本之后LBF采用了 **config** 的方法来进行设置。下面就 **config** 的使用进行详细说明。
 
 下面是 **lbf.config** 方法中增加的几个属性: 
   
@@ -142,5 +145,9 @@ LBF.config({
 });
 LBF.use(['lib.jQuery', 'lib.Backbone'], function($, bb) {});
 ```
+
+
+
+
 
 
