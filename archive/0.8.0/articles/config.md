@@ -145,10 +145,11 @@ LBF.config({
     }
 });
 LBF.use(['lib.jQuery', 'lib.Backbone'], function($, bb) {});
-可点击下面链接查看实例:
-[comboExcludes example](http://jsfiddle.net/dapenggaofei/quhy6br1/6/)
 
 ```
+
+可点击下面链接查看实例:
+[comboExcludes example](http://jsfiddle.net/dapenggaofei/quhy6br1/6/)
 
 
 
