@@ -27,7 +27,7 @@ LBF重构了核心代码，在seajs的源码基础上进行改造和整合。
 
 因此LBF的配置接口由config改为set，配置参数也做了相应调整。
 
-详情请查看[LBF配置](./versions/0.8.0/config.md)
+详情请查看[LBF配置](./articles/config.md)
 ```javascript
 LBF.config({
     // 命名域映射配置
