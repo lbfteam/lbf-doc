@@ -17,7 +17,7 @@
 * comboExcludes
 
 ***
-下面是LBF中对define, use后面的id或ids进行处理的函数。先处理alias, nameSpace, 然后是paths, vars, 在加上base之后，再进行map操作。
+id2Uri是LBF中对define, use后面的id或ids进行处理的函数。先处理alias, nameSpace, 然后是paths, vars, 在加上base之后，再进行map操作。这个顺序对我们进行参数设定非常重要。
 ```javascript
 function id2Uri(id, refUri) {
   if (!id) return ""
@@ -35,7 +35,7 @@ function id2Uri(id, refUri) {
   return uri
 }
 ```
-以下参数皆可能过LBF.data.alias || LBF.data.paths等进行直接获取。
+以下参数皆可通过LBF.data.alias || LBF.data.paths等进行直接获取。
 ###alias
 别名，如果一个模块名超长，如a/b/c/d/e/f, 则可以用alias来进行别名，让代码更加短和易读。
 
@@ -67,7 +67,7 @@ LBF.config({
        LBF.use(['cssPath/Button.css'], function(buttonCss) {
        });
 ```
-可点击下面示例进行查看：
+可点击下面链接查看实例:
 [paths example](http://jsfiddle.net/dapenggaofei/kg1y3uft/1/)
 ###vars
 对于有一些变量需要在运行的时候才能确定。比如更换UI包。之前LBF中的实现是通过\__THEME__来进行标识。现在0.8.0引入了vars对象。我们不仅可以对UI包进行替换，还能配置其他变量，load不同的js或css文件。
@@ -82,6 +82,7 @@ LBF.use(['{theme}/lbfUI/css/Button.css'], function(buttonCss) {
 
 });
 ```
+可点击下面链接查看实例:
 [vars example](http://jsfiddle.net/dapenggaofei/n6d9ppjf/8/)
 
 ###map 
@@ -98,7 +99,7 @@ LBF.use(['lib.jQuery'], function($) {
     alert('loaded jQuery from online');
 });
 ```
-查看示例：
+可点击下面链接查看实例:
 [map example](http://jsfiddle.net/dapenggaofei/kojsw837/1/)
 
 <b style="color:#cccccc">在这里我有一个问题，为哈这里用数组，而不是跟前面一样用对象呢</b>
@@ -127,7 +128,7 @@ comboSyntax: ['c/=', ',']
 ###comboSuffix
 comboSuffix是在combo合并之后，附加在每一个请求后面的小尾巴。如果我们要更新版本号，更改的就是这个了。
 ```javascript
-comboSuffix: '?v=20141014
+comboSuffix: '?v=20141014'
 ```
 
 ###comboExcludes
@@ -144,6 +145,9 @@ LBF.config({
     }
 });
 LBF.use(['lib.jQuery', 'lib.Backbone'], function($, bb) {});
+可点击下面链接查看实例:
+[comboExcludes example](http://jsfiddle.net/dapenggaofei/quhy6br1/6/)
+
 ```
 
 
