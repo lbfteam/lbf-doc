@@ -35,7 +35,7 @@ function id2Uri(id, refUri) {
   return uri
 }
 ```
-以下参数皆可通过LBF.data.alias || LBF.data.paths等进行直接获取。
+以下参数皆可通过 require('globalSetting').alias(paths)等进行直接获取。
 ###alias
 别名，如果一个模块名超长，如a/b/c/d/e/f, 则可以用alias来进行别名，让代码更加短和易读。
 
@@ -102,16 +102,15 @@ LBF.use(['lib.jQuery'], function($) {
 可点击下面链接查看实例:
 [map example](http://jsfiddle.net/dapenggaofei/kojsw837/1/)
 
-<b style="color:#cccccc">在这里我有一个问题，为哈这里用数组，而不是跟前面一样用对象呢</b>
 
 ###debug
-debug开头。代码中只有一处对debug的处理。
+debug是否开启。代码中只有一处对debug的处理。
 ```javascript
     if (!isCSS && !data.debug) {
       head.removeChild(node)
     }
 ```
-我们可以通过LBF.data.debug来获取该值。来进行一些debug操作。
+我们可以通过require('globalSetting').debug来获取该值。来进行一些debug操作。
 
 ###combo
 是否开启combo合并选项。如果静态资源服务器不支持combo合并，那这里就不要进行设定了。如果支持则设为true。下面几个参数都是针对combo=true时的一些设置。
