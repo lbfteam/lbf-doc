@@ -43,3 +43,5 @@ LBF.use('lib.jQuery', function($){
 - 移动端支持
 - ICheckbox/IRadio优化重构
 - AutoComplete优化
+
+[提bug或有任何问题请在此留言或讨论](https://github.com/lbfteam/lbf-doc/issues)
