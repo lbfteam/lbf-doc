@@ -46,7 +46,7 @@ LBF.config({
     combo: true,
 
     // combo连接符
-    comboSyntax: ['c/=', ','],
+    comboSyntax: ['c/=/', ',/'],
 
     // 单个uri最大长度，如果合并文件uri超过该长度，则会分拆请求
     comboMaxLength: 1000,
