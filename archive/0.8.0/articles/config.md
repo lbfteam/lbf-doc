@@ -118,7 +118,7 @@ debug是否开启。代码中只有一处对debug的处理。
 ###comboSyntax
 我们不需要修改这个值。使用默认的就好。
 ```javascript
-comboSyntax: ['c/=', ',']
+comboSyntax: ['c/=/', ',/']
 ```
 
 ###comboMaxLength
